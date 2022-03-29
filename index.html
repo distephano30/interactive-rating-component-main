@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Interactive rating component</title>
+
+</head>
+<body>
+
+  <!-- Rating state start -->
+  <!-- the card -->
+  <div class="rating-card card-visible">
+
+    <!-- the main items container -->
+    <main>
+    <!-- the star logo -->
+    <div class="star-logo">
+      <img src="images/icon-star.svg" alt="">
+    </div>
+
+    <!-- the headline -->
+    <h1>How did we do?</h1>
+
+    <!-- the paragraph -->
+    <p>Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!</p>
+
+    <!-- the numbers -->
+    <div class="rating-state">
+        <div class="rating-number">1</div>
+        <div class="rating-number">2</div>
+        <div class="rating-number">3</div>
+        <div class="rating-number">4</div>
+        <div class="rating-number">5</div>
+    </div>
+
+    <!-- the submit button -->
+    <button class="submit-btn">submit</button>
+
+    </main>
+  </div>
+
+  
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+   <!-- the card -->
+   <div class="result-card">
+     <div class="content">
+    <!-- the star logo -->
+    <div class="thankyou-logo">
+      <img src="images/illustration-thank-you.svg" alt="">
+    </div>
+
+    <!-- the result -->
+    <p class="rating-result">You selected <span class="selection">4</span> out of 5</p>
+    <!-- the headline -->
+    <h1>Thank you!</h1>
+ 
+    <!-- the paragraph -->
+    <p class="appreciation"> We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
+
+    </div>
+
+  </div>
+
+  <!-- Thank you state end -->
+
+
+  <script src="app.js"></script>
+</body>
+</html>
