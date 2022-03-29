@@ -1,0 +1,215 @@
+:root {
+  /* primary */
+  --orange: hsl(25, 97%, 53%);
+
+  /* neutral */
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;1,700&family=Rubik:wght@300;400;500&display=swap");
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+/* the main styles */
+body {
+  font-family: "Overpass", sans-serif;
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--very-dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rating-card,
+.result-card {
+  width: 22%;
+  background-color: var(--dark-blue);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.star-logo {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-top: 20px;
+  background-color: var(--very-dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  width: 85%;
+  height: 85%;
+}
+h1 {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+p {
+  width: 95%;
+  color: var(--light-grey);
+  font-size: 12px;
+}
+.rating-state {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-number {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-top: 20px;
+  background-color: var(--very-dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--light-grey);
+  font-size: 11px;
+  cursor: pointer;
+}
+.rating-number:hover {
+  background-color: var(--orange);
+  color: var(--white);
+  font-weight: 700;
+}
+/* the selected rating */
+.selected {
+  background-color: var(--medium-grey);
+  color: var(--white);
+  font-weight: 700;
+}
+button {
+  width: 100%;
+  color: var(--white);
+  background-color: var(--orange);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 40px;
+  padding: 8px 0;
+  margin: 20px 0;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  color: var(--orange);
+  background-color: var(--white);
+}
+/* hide the result rating */
+.card-visible {
+  display: none;
+}
+/* the result of the rating style */
+.content {
+  width: 85%;
+  height: 70%;
+  text-align: center;
+  margin: 30px auto;
+}
+.thankyou-logo {
+  width: 40%;
+  height: 75px;
+  margin: auto;
+}
+.thankyou-logo > img {
+  width: 100%;
+  height: 100%;
+}
+.rating-result {
+  width: 60%;
+  margin: 10px auto;
+  background-color: var(--very-dark-blue);
+  color: var(--orange);
+  padding: 5px 10px;
+  border-radius: 40px;
+}
+h1 {
+  font: size 0.8rem;
+  font-weight: 300;
+}
+.appreciation {
+  width: 90%;
+  font-size: 12px;
+  margin: auto;
+  color: var(--light-grey);
+}
+/* mobile style */
+@media (max-width: 1200px) {
+  .rating-card {
+    width: 30%;
+  }
+  .rating-result {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .rating-card,
+  .result-card {
+    width: 35%;
+  }
+}
+
+@media (max-width: 700px) {
+  .rating-card,
+  .result-card {
+    width: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .rating-card,
+  .result-card {
+    width: 50%;
+  }
+  p {
+    font-size: 16px;
+  }
+  .number-container {
+    width: 40px;
+    height: 40px;
+  }
+
+  .rating-number {
+    color: var(--light-grey);
+    font-size: 14px;
+  }
+
+  button {
+    margin-bottom: 35px;
+    padding: 15px 0;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .rating-card,
+  .result-card {
+    width: 60%;
+  }
+}
+@media (max-width: 450px) {
+  .rating-card,
+  .result-card {
+    width: 90%;
+  }
+}
